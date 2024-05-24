@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DanceCamera3D: 3D Camera Movement Synthesis with Music and Dance">
+  <meta name="keywords" content="Motion Generation, Music to Dance, GPT, VQVAE, Reinforcement Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DanceCamera3D: 3D Camera Movement Synthesis with Music and Dance</title>
+
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">DanceCamera3D: 3D Camera Movement Synthesis with Music and Dance</h1>
+          <h2 class="title is-4 publication-title">CVPR 2024</h2>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/Carmenw1203">Zixuan Wang</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://hcsi.cs.tsinghua.edu.cn">Jia Jia</a><sup>1,2✉</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=C1YFRxAAAAAJ&hl=zh-CN&oi=ao">Shikun Sun</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=sN2_9nYAAAAJ&hl=zh-CN&oi=ao">Haozhe Wu</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=siJxWj0AAAAJ&hl=zh-CN&oi=ao">Rong Han</a><sup>1</sup>,
+            </span>
+            <br/>
+            <span class="author-block">
+              <a href="https://github.com/leezythu">Zhenyu Li</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+		      <a>Di Tang </a><sup>4</sup>
+            </span>
+            <span class="author-block">
+              <a>Jiaqing Zhou </a><sup>4</sup>
+                </span>
+            <span class="author-block">
+              <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a><sup>3✉</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Department of Computer Science and Technology, Tsinghua University, Beijing 100084, China  </span>
+            <span class="author-block"><sup>2</sup>Beijing National Research Center for Information Science and Technology (BNRist)  </span>
+            <span class="author-block"><sup>3</sup>Department of Computer Science, University of Rochester, USA  </span>
+            <span class="author-block"><sup>4</sup>ByteDance Hangzhou, China</span>
+          </div>
+          <ul class="list-unstyled name-list">
+              <li>✉corresponding author</li>
+          </ul>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. --> 
+      
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2403.13667"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+             
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Carmenw1203/DanceCamera3D-Official"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Carmenw1203/DanceCamera3D-Official"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+            </a>
+
+           
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Teaser Video/GIF Auto-play
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Some sample videos/gifs rolling?
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Choreographers determine what the dances look like, while cameramen determine the final presentation of dances. Recently, various methods and datasets have showcased the feasibility of dance synthesis. However, camera movement synthesis with music and dance remains an unsolved challenging problem due to the scarcity of paired data. Thus, we present <b>DCM</b>, a new multi-modal 3D dataset, which for the first time combines camera movement with dance motion and music audio. This dataset encompasses 108 dance sequences (3.2 hours) of paired dance-camera-music data from the anime community, covering 4 music genres. With this dataset, we uncover that dance camera movement is multifaceted and human-centric, and possesses multiple influencing factors, making dance camera synthesis a more challenging task compared to camera or dance synthesis alone. To overcome these difficulties, we propose <b>DanceCamera3D</b>, a transformer-based diffusion model that incorporates a novel body attention loss and a condition separation strategy. For evaluation, we devise new metrics measuring camera movement quality, diversity, and dancer fidelity. Utilizing these metrics, we conduct extensive experiments on our DCM dataset, providing both quantitative and qualitative evidence showcasing the effectiveness of our DanceCamera3D model.
+          </p>
+        </div>
+        <img src="static/images/main_figure.png" width="150%" class="center-image" />
+        <h2 class="subtitle has-text-centered">An overview of the DCM dataset.</h2>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="content">
+      <h2 class="title is-3">Dataset Download</h2>
+      <div class="level-set has-text-justified">
+        <b>This dataset is available only for the academic use.</b> Out of respect and protection for the original data providers, we have collected all the links to the raw data for users to download from the original data creators. Please show your appreciation and support for the work of the original data creators by liking and bookmarking their content if you use this data. Please adhere to the usage rules corresponding to this original data; any ethical or legal violations will be the responsibility of the user. The users must sign the eula form <a href="https://github.com/Carmenw1203/DanceCamera3D-Official/blob/master/media/DCM-EULA-20240318.pdf"
+        target="_blank">DCM-EULA-20240318.pdf.</a> and send the scanned form to wangzixu21@mails.tsinghua.edu.cn. Once approved, you will be supplied with a download link.
+
+        To preprocess our dataset, please see the README.md in <a href="https://github.com/Carmenw1203/DanceCamera3D-Official"
+        target="_blank">our code</a>.
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{Wang2024DanceCamera3D,
+  author    = {Wang, Zixuan and Jia, Jia and Sun, Shikun and Wu, Haozhe and Han, Rong and Li, Zhenyu and Tang, Di and Zhou, Jiaqing and Luo, Jiebo},
+  title     = {DanceCamera3D: 3D Camera Movement Synthesis with Music and Dance},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year      = {2024},
+}</code></pre>
+  </div>
+ 
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template was borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> .
+            <br> This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
