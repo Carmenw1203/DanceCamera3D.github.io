@@ -68,10 +68,10 @@
               <a href="https://github.com/leezythu">Zhenyu Li</a><sup>1</sup>,
             </span>
             <span class="author-block">
-		      <a>Di Tang </a><sup>4</sup>
+		      <a>Di Tang</a><sup>4</sup>,
             </span>
             <span class="author-block">
-              <a>Jiaqing Zhou </a><sup>4</sup>
+              <a>Jiaqing Zhou</a><sup>4</sup>,
                 </span>
             <span class="author-block">
               <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a><sup>3✉</sup>
@@ -189,6 +189,30 @@
       </div>
     </div>
     <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Dataset Description. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Description</h2>
+        <div class="content has-text-justified">
+          <p>
+            After alignment, DCM dataset contains 108 pieces of paired data(193 minutes) covering music in 4 kinds of languages including English, Chinese, Korean, and Japanese. For camera pose representation, we originally acquired data in the MMD format (representation in Polar coordinate system) and preprocessed the data into  Camera-Centric format (representation in Cartesian coordinate system) for the calculation of training losses. Besides, dance motion in our data consists of rotations and positions of 60 joints. The FPS of dance motion and camera movement is 30. 
+          </p>
+        </div>
+        <img src="static/images/camera_representation.png" width="150%" class="center-image" />
+        <div class="content has-text-justified">
+          <p>
+            The duration of the original data ranges from 17 to 267 seconds. To divide them into train, test, and validation sets, we first randomly cut our data into shorter pieces ranging from 17 to 35 seconds, in which all cut points are keyframes for better reservation of camera characteristics. Then for every music type, we randomly split the data with probabilities of 0.8 : 0.1 : 0.1 to obtain the train, test, and validation sets. 
+          </p>
+        </div>
+        <img src="static/images/dataset_pies.png" width="150%" class="center-image" />
+      </div>
+    </div>
+    <!--/ Dataset Description. -->
   </div>
 </section>
 
